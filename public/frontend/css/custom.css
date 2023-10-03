@@ -1,0 +1,36 @@
+/* Define a maximum height for the carousel container */
+#carouselExampleIndicators {
+    max-height: 500px; /* Adjust the value as needed */
+}
+
+#carouselExampleIndicators img{
+    max-height: 500px; /* Adjust the value as needed */
+}
+
+/* Example media query for smaller screens */
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        max-height: 200px; /* Adjust the value for smaller screens */
+    }
+}
+
+/* CSS to control the size of images */
+/* .image-container {
+    text-align: center;
+} */
+
+/* CSS to control the size of images */
+.image-container {
+    width: 100%; /* Set the width of the container to 100% */
+    padding-top: 100%; /* Maintain a 1:1 aspect ratio for the container (same width and height) */
+    position: relative;
+    overflow: hidden; /* Hide any overflow outside of the container */
+}
+
+.product-image {
+    width: 100%; /* Set the width of the image to 100% of its container */
+    height: auto; /* Allow the image to maintain its aspect ratio */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
