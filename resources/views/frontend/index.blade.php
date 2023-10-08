@@ -47,4 +47,29 @@ Home Page || E-shop
         </div>
     </div>
 </div>
+
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <h2>Trending Categories</h2>
+            <div class="owl-carousel feature-carousel owl-theme">
+                @foreach ($popular_category as $popular_category)
+                    <div class="item mt-3">
+                        <a class="remove-line" href="{{url('/view-category/'.$popular_category->slug)}}">
+                            <div class="card">
+                                <div class="image-container">
+                                    <img src="{{asset('assets/uploads/category/'.$popular_category->image)}}" alt="" class="category-image">
+                                </div>
+                                <div class="card-body">
+                                    <h5>{{$popular_category->name}}</h5>
+                                    <p>{{$popular_category->description}}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

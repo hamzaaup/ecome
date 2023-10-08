@@ -39,6 +39,16 @@
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
+                        <li class="nav-item">
+                            <a href="{{url('/')}}" class="nav-link">
+                                <span class="d-sm-inline ">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url('/category')}}" class="nav-link">
+                                <span class="d-sm-inline ">Category</span>
+                            </a>
+                        </li>
                             @if (Route::has('login'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>

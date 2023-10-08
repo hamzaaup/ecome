@@ -16,8 +16,12 @@
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-    <!--     Fonts and icons     -->
+    <!--  google   Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    
+    <!--  Fonts awesome     -->
+    <link rel="stylesheet" href="{{ asset('frontend/css/fontawesome.min.css') }}">
+    
     <!-- Nucleo Icons -->
     <link href="{{ asset('frontend/css/bootstrap5.css') }}" rel="stylesheet" />
     <link href="{{ asset('frontend/css/custom.css') }}" rel="stylesheet" />

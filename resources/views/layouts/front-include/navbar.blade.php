@@ -16,7 +16,12 @@
               <a href="{{url('/')}}" class="nav-link text-body font-weight-bold px-0">
                 <span class="d-sm-inline ">Home</span>
               </a>
-            </li>
+            </li>&nbsp;&nbsp;
+            <li class="nav-item d-flex align-items-center ">
+              <a href="{{url('/category')}}" class="nav-link text-body font-weight-bold px-0">
+                <span class="d-sm-inline ">Category</span>
+              </a>
+            </li>&nbsp;&nbsp;
             @if (Route::has('login'))
                 @auth
                     <li class="nav-item dropdown">

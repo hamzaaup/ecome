@@ -27,10 +27,25 @@
     overflow: hidden; /* Hide any overflow outside of the container */
 }
 
-.product-image {
+.product-image , .category-image {
     width: 100%; /* Set the width of the image to 100% of its container */
     height: auto; /* Allow the image to maintain its aspect ratio */
     position: absolute;
     top: 0;
     left: 0;
 }
+
+.remove-line{
+    text-decoration: none !important;
+}
+
+.ol-item{
+    background-color: orange;
+    height: 32px;
+} 
+
+/* Initially hide additional paragraphs */
+#description p:nth-child(n+2) {
+    display: none;
+}
+
